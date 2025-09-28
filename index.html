@@ -45,11 +45,13 @@
       justify-content: center;
       height: 100vh;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0 25px #ffffff;
     }
 
-    .product {
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #ffffff;
       text-align: center;
       max-width: 500px;
     }
@@ -90,11 +92,13 @@
 <body>
   <header>NikEcommerce</header>
   <div class="container">
-    <div class="product">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/600px-FullMoon2010.jpg" alt="Moon Ball">
-      <h2>Quantum Moon Ball</h2>
-      <p>The Moon Ball You All Know And Love</p>
-      <button class="buy-button">Buy Now</button>
+    <div class="overlay">
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/600px-FullMoon2010.jpg" alt="Moon Ball">
+        <h2>Quantum Moon Ball</h2>
+        <p>The Moon Ball You All Know And Love</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
     </div>
   </div>
 </body>

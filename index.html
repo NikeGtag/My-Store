@@ -15,18 +15,8 @@
         linear-gradient(90deg, #ffffff 1px, transparent 1px);
       background-size: 40px 40px;
       background-repeat: repeat;
-      animation: gridScroll 60s linear infinite;
       color: #ffffff;
       overflow-x: hidden;
-    }
-
-    @keyframes gridScroll {
-      from {
-        background-position: 0 0;
-      }
-      to {
-        background-position: 0 -2000px;
-      }
     }
 
     header {
@@ -40,20 +30,23 @@
 
     .container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       width: 100%;
     }
 
     .overlay {
       background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
-      padding: 2rem;
-      border-radius: 12px;
+      padding: 3rem 2rem;
+      border-radius: 20px;
       box-shadow: 0 0 25px #ffffff;
       text-align: center;
-      max-width: 500px;
+      width: 300px;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .product img {
@@ -70,6 +63,7 @@
     .product p {
       color: #ffffff;
       font-size: 1rem;
+      margin: 1rem 0;
     }
 
     .buy-button {
